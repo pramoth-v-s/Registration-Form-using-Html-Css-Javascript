@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="sty.css">
+
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form name="regform" onsubmit="return validateform()">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" placeholder="Name" style="margin-left: 50px;"><br>
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="regno">Reg no</label>
+            <input type="text" id="regno" name="RegNo" placeholder="RegNo" style="margin-left: 45px;"><br>
+            <span id="regno-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="Email" placeholder="Email" style="margin-left: 53px;"><br>
+            <span id="email-error" class="error-message"> </span>
+        </p>
+        <p>
+            <label for="mobile">Mobile No</label>
+            <input type="text" id="mobile" name="MobileNo" placeholder="Mobile Number" style="margin-left: 22px;"><br>
+            <span id="mobile-error" class="error-message"> </span>
+        </p>
+        <p>
+            <label for="dept">Department</label>
+            <select id="dept" name="Dept" style="margin-left: 20px;">
+                <option></option>
+                <option>Electronics and Communication</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Artificial Intellegence</option>
+            </select><br>
+            <span id="dept-error" class="error-message"></span>
+        </p>
+        <div id="d1">
+            <input id="check" type="checkbox" name="Agree">
+            <b>agree</b><br>
+            <span id="check-error" class="error-message"></span>
+        </div><br>
+        <input type="submit" style="background-color: green;color: white;">
+        <input type="reset"  style="background-color: rgb(165, 42, 42); color: white;" >
+    </form>
+    <script src="ja.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="sty.css">
+    <script src="ja.js"></script>
+
+</head>
+<body>
+<h1>REGISTRATION FORM</h1>
+  <form name="RegForm" onsubmit="return validateForm()">
+      <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="Name" 
+              placeholder="Enter your full name" />
+          <span id="name-error" class="error-message"></span>
+      </p>
+      <p>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="Address" 
+              placeholder="Enter your address" />
+          <span id="address-error" class="error-message"></span>
+      </p>
+      <p>
+          <label for="email">E-mail Address:</label>
+          <input type="text" id="email" name="EMail" 
+              placeholder="Enter your email" />
+          <span id="email-error" class="error-message"></span>
+      </p>
+      <p>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="Password" />
+          <span id="password-error" class="error-message"></span>
+      </p>
+      <p>
+          <label for="subject">Select Your Course:</label>
+          <select id="subject" name="Subject">
+              <option value="">
+                  Select Course
+              </option>
+              <option value="BTECH">
+                  BTECH
+              </option>
+              <option value="BBA">
+                  BBA
+              </option>
+              <option value="BCA">
+                  BCA
+              </option>
+              <option value="B.COM">
+                  B.COM
+              </option>
+          </select>
+          <span id="subject-error" class="error-message"></span>
+      </p>
+      <p>
+          <label for="comment">College Name:</label>
+          <textarea id="comment" name="Comment"></textarea>
+      </p>
+      <p>
+          <input type="checkbox" id="agree" name="Agree" />
+          <label for="agree">I agree to the above
+              information</label>
+          <span id="agree-error" class="error-message"></span>
+      </p>
+      <p>
+          <input type="submit" value="Send" name="Submit" />
+          <input type="reset" value="Reset" name="Reset" />
+      </p>
+  </form>
+</body>
+</html> -->
+
